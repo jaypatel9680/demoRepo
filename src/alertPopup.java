@@ -19,6 +19,7 @@ public class alertPopup {
 		
 		System.out.println(alert.getText());
 		
+		
 		alert.accept(); 
 		
 		

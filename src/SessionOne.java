@@ -13,8 +13,8 @@ public class SessionOne {
 	 	dr.get("https://www.toolsqa.com/");
 		
 		WebElement fn = dr.findElement(By.xpath("//a[text()='SpecFlow']"));
-		TestUtility.scrollFunc(fn);
-		TestUtility.clickFunc(fn);
+		TestUtility.scrollFunc(fn,dr);
+		TestUtility.clickFunc(fn,dr);
 
 		
 		

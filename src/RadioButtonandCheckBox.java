@@ -13,7 +13,7 @@ public class RadioButtonandCheckBox {
 		dr.get("https://demoqa.com/automation-practice-form/");
 		
 		WebElement pt=dr.findElement(By.xpath("//input[@id='exp-1']"));
-		TestUtility.scrollFunc(pt);
+		TestUtility.scrollFunc(pt,dr);
 		
 		boolean b = pt.isSelected();
 		System.out.println(b);
