@@ -17,6 +17,8 @@ public class TestBase {
 		
 		System.setProperty(key,value);
 		 driver=new ChromeDriver();
+		 driver.manage().deleteAllCookies();
+		 
 		 return driver;
 		 
 		 

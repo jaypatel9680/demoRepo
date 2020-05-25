@@ -20,7 +20,7 @@ public class mouseMoveOver {
 		Thread.sleep(3000);
 		
 		driver.findElement(By.linkText("Canada Deposit Insurance Corporation")).click();
-		
+		driver.close();
 		
 		
 		

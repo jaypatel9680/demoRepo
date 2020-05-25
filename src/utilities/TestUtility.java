@@ -30,12 +30,15 @@ public class TestUtility {
 	JavascriptExecutor je=(JavascriptExecutor) driver;
 	je.executeScript("arguments[0].click();",a);
 }
-	public static void screenShot(String filename, WebDriver driver) throws IOException {
+	public static void screenShot(String filename, WebDriver   driver) throws IOException {
 		
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File file = ts.getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(file, new File("/Users/jay/eclipse-workspace/SelenuimFirstProject/src/"+filename
-				+".jpg"));
+		
+			FileHandler.copy(file, new File("/Users/jay/eclipse-workspace/SelenuimFirstProject/src/"+filename
+					+".jpg"));
+		
+		
 		
 	}
 }
